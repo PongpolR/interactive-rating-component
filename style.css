@@ -1,7 +1,8 @@
-@media all{
-  html {
+@media all {
+  body {
     font-family: 'Overpass', sans-serif;
   }
+
   body {
     background: hsl(216, 12%, 8%);
     color: white;
@@ -10,17 +11,110 @@
     min-height: 100vh;
     flex-direction: column;
   }
+
+  h1 {
+    font-weight: 700;
+  }
+
+  p {
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+    font-size: 15px;
+  }
+
   .card {
-    background: hsl(213, 19%, 18%);
+    background: hsla(213, 19%, 18%, 0.4);
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    padding: 2.5rem;
+    padding-left: 2rem;
+
+    width: 23%;
+    border-radius: 20px;
+  }
+
+  .circle {
+    width: 15px;
+    height: 15px;
+    background: hsl(213, 19%, 18%);
+    padding: 0.7rem;
+    border-radius: 50%;
+  }
+
+  .number {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .number div {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  /* .number .circle {
+    width: 20px;
+    height: 20px;
+    padding: 1rem;
+    padding-bottom: 0.9rem;
+  } */
+  .number div:hover {
+    background-color: hsl(25, 97%, 53%);
+  }
+  /* .number .circle:hover::after {
+    background-color: hsl(25, 97%, 53%);
+  } */
+  #btn-1,
+  #btn-2,
+  #btn-3,
+  #btn-4,
+  #btn-5 {
+    padding: 1rem;
+    border: none;
+  }
+
+  /* #btn-1:hover, #btn-2:hover, #btn-3:hover, #btn-4:hover, #btn-5:hover {
+    cursor: pointer;
+    text-transform: uppercase;
+  } */
+
+  .HoverClass1:hover {
+    background-color: hsl(25, 97%, 53%) !important;
+  }
+
+  .HoverClass2:hover {
+    background-color: yellow !important;
+  }
+
+  .submit {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+  }
+
+  .submit button {
+    border: none;
+    padding: 0.7rem;
+    background: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Overpass', sans-serif;
   }
 }
 
 @media (min-width: 376px) {
   #icon {
-    width: 3%;
+    width: 15px;
+  }
+
+  h1 {
+    margin-bottom: -0.4rem;
   }
 }
