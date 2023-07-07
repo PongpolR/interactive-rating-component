@@ -1,0 +1,26 @@
+@media all{
+  html {
+    font-family: 'Overpass', sans-serif;
+  }
+  body {
+    background: hsl(216, 12%, 8%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .card {
+    background: hsl(213, 19%, 18%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 376px) {
+  #icon {
+    width: 3%;
+  }
+}
