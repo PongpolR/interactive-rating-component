@@ -1,20 +1,3 @@
-let count = 0;
-function test() {
-  if (count % 2 == 0) {
-    document.getElementById("test").innerHTML = "JS";
-    document.getElementById("test").id = "test2";
-  }
-  else {
-    document.getElementById("test2").innerHTML = "Test";
-    document.getElementById("test2").id = "test";
-  }
-
-  count++;
-
-  console.log(count);
-}
-
-let tempId = '';
 let selected = '';
 
 function numberSelected(id) {
@@ -23,20 +6,24 @@ function numberSelected(id) {
       if (i != id) {
         var button = document.getElementById(`btn-${i}`);
         button.style.backgroundColor = "hsl(213, 19%, 18%)";
-        /* Clear all previous hover classes */
+        button.style.color = 
+        "hsl(216, 12%, 54%)";
+
         button.classList.remove('HoverClass1', 'HoverClass2');
-        /* Set the desired hover class */
+
         button.classList.add('HoverClass1');
       }
     }
   }
   else if (selected == id) {
     document.getElementById(id).style.backgroundColor = "hsl(213, 19%, 18%)";
+    document.getElementById(id).style.color = 
+        "hsl(216, 12%, 54%)";
     selected = '';
     console.log(selected);
-    /* Clear all previous hover classes */
+
     document.getElementById(id).classList.remove('HoverClass1', 'HoverClass2');
-    /* Set the desired hover class */
+
     document.getElementById(id).classList.add('HoverClass1');
     return;
   }
@@ -51,9 +38,16 @@ function numberSelected(id) {
 }
 
 function submit() {
-  console.log("submit");
   let elem = document.getElementById("card-start");
-  elem.parentNode.removeChild(elem);
+  let userScore = selected.slice(-1);
 
-  document.getElementById("card-end").style.visibility = "visible";
+  if (selected != "") {
+    elem.parentNode.removeChild(elem);
+    document.getElementById("card-end").style.visibility = "visible";
+    document.getElementById("score").innerHTML = `You selected ${userScore} out of 5`;
+  }
+  else {
+    console.log("no rating");
+  }
+  
 }
