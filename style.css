@@ -20,19 +20,33 @@
     color: hsl(216, 12%, 54%);
     font-weight: 400;
     font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
   }
 
-  .card {
+  .state-end, #card-end {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+  }
+
+  .state-start, .state-end, #card-start, #card-end {
+    /* visibility: hidden; */
     background: hsla(213, 19%, 18%, 0.4);
+    
+    margin: 0 auto;
+    width: 23%;
+    padding: 2.5rem;
+    padding-left: 2rem;
+    border-radius: 20px;
+  }
+
+  .state-start, #card-start {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
-    padding: 2.5rem;
-    padding-left: 2rem;
-
-    width: 23%;
-    border-radius: 20px;
   }
 
   .circle {
@@ -41,6 +55,11 @@
     background: hsl(213, 19%, 18%);
     padding: 0.7rem;
     border-radius: 50%;
+  }
+
+  .card .circle {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
   }
 
   .number {
@@ -74,6 +93,8 @@
   #btn-5 {
     padding: 1rem;
     border: none;
+    color: hsl(216, 12%, 54%);
+    font-weight: 700;
   }
 
   /* #btn-1:hover, #btn-2:hover, #btn-3:hover, #btn-4:hover, #btn-5:hover {
@@ -92,7 +113,8 @@
   .submit {
     display: flex;
     flex-direction: column;
-    /* margin: 0 auto; */
+    margin-top: -0.4rem;
+    margin-bottom: -0.7rem;
   }
 
   .submit button {
@@ -100,12 +122,13 @@
     padding: 0.7rem;
     background: hsl(25, 97%, 53%);
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Overpass', sans-serif;
+    cursor: pointer;
   }
 }
 

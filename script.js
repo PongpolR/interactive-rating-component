@@ -42,9 +42,18 @@ function numberSelected(id) {
   }
 
   document.getElementById(id).style.backgroundColor = "hsl(216, 12%, 54%)";
+  document.getElementById(id).style.color = "white";
   selected = id;
   console.log(selected);
 
   document.getElementById(id).classList.remove('HoverClass1', 'HoverClass2');
 
+}
+
+function submit() {
+  console.log("submit");
+  let elem = document.getElementById("card-start");
+  elem.parentNode.removeChild(elem);
+
+  document.getElementById("card-end").style.visibility = "visible";
 }
