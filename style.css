@@ -13,13 +13,14 @@
   }
 
   h1 {
+    font-size: 28px;
     font-weight: 700;
+    margin-bottom: -0.4rem;
   }
 
   p {
     color: hsl(216, 12%, 54%);
     font-weight: 400;
-    font-size: 15px;
     line-height: 1.6;
     margin-bottom: 1.5rem;
   }
@@ -35,11 +36,8 @@
   .state-start, .state-end, #card-start, #card-end {
     background: hsla(213, 19%, 18%, 0.4);
     margin: 0 auto;
-    width: 23%;
     padding-top: 2rem;
     padding-bottom: 2.5rem;
-    padding-left: 2.2rem;
-    padding-right: 2.2rem;
     border-radius: 20px;
   }
 
@@ -84,7 +82,6 @@
   #btn-3,
   #btn-4,
   #btn-5 {
-    padding: 1rem;
     border: none;
     color: hsl(216, 12%, 54%);
     font-weight: 700;
@@ -124,8 +121,6 @@
     text-align: center;
     padding: 0.3rem 1rem;
     padding-top: 0.5rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
     border-radius: 20px;
     background: hsl(213, 19%, 18%);
     color: hsl(25, 97%, 53%);
@@ -145,19 +140,78 @@
 
   #thx-p {
     text-align: center;
-    margin-left: -2rem;
-    margin-right: -2rem;
     padding: 0 1.5rem;
     margin-bottom: -0.2rem;
   }
+
 }
 
+/* desktop */
 @media (min-width: 376px) {
   #icon {
     width: 15px;
   }
 
-  h1 {
-    margin-bottom: -0.4rem;
+  p {
+    font-size: 15px;
+  }
+
+  .state-start, .state-end, #card-start, #card-end {
+    width: 23%;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+
+  #btn-1,
+  #btn-2,
+  #btn-3,
+  #btn-4,
+  #btn-5 {
+    padding: 1rem;
+  }
+
+  #score {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  #thx-p {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 375px) {
+  #icon {
+    width: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .state-start, .state-end, #card-start, #card-end {
+    width: 77%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  #btn-1,
+  #btn-2,
+  #btn-3,
+  #btn-4,
+  #btn-5 {
+    padding: 0.9rem;
+  }
+
+  #score {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  #thx-p {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
   }
 }
