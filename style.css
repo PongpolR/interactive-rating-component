@@ -74,19 +74,11 @@
     cursor: pointer;
   }
 
-  /* .number .circle {
-    width: 20px;
-    height: 20px;
-    padding: 1rem;
-    padding-bottom: 0.9rem;
-  } */
   .number div:hover {
     background-color: hsl(25, 97%, 53%);
     color: white !important; 
   }
-  /* .number .circle:hover::after {
-    background-color: hsl(25, 97%, 53%);
-  } */
+
   #btn-1,
   #btn-2,
   #btn-3,
@@ -97,11 +89,6 @@
     color: hsl(216, 12%, 54%);
     font-weight: 700;
   }
-
-  /* #btn-1:hover, #btn-2:hover, #btn-3:hover, #btn-4:hover, #btn-5:hover {
-    cursor: pointer;
-    text-transform: uppercase;
-  } */
 
   .HoverClass1:hover {
     background-color: hsl(25, 97%, 53%) !important;
@@ -137,21 +124,31 @@
     text-align: center;
     padding: 0.3rem 1rem;
     padding-top: 0.5rem;
-    margin-left: 4.3rem;
-    margin-right: 4.3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
     border-radius: 20px;
-    /* margin: 0 0.3rem; */
     background: hsl(213, 19%, 18%);
     color: hsl(25, 97%, 53%);
   }
 
   #thx-text {
+    margin-top: 2rem;
     text-align: center;
   }
 
   .thankyou-icon {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #thx-p {
+    text-align: center;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 0 1.5rem;
+    margin-bottom: -0.2rem;
   }
 }
 
